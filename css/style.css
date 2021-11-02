@@ -20,6 +20,25 @@ section{
     text-align: center;
 }
 
+.btn{
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-medium{
+    padding: 5px 10px;
+}
+
+.btn-white{
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-container{
+    width: 100%;
+    text-align: center;
+}
+
 /*HEADER*/
 /*Nav*/
 .logo{
@@ -83,6 +102,24 @@ header a{
     margin: 15px 0;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.about{
+    background-color: #1abc9c;
+    color: white;
+}
+
+.about .wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about-text{
+    margin: 10px 0;
+}
+
+.about .btn{
+    margin-top: 20px;
 }
 
 
