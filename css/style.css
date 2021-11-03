@@ -54,6 +54,12 @@ section{
     border: 1px solid #1abc9c;
 }
 
+.ms-btn-cyan:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #1abc9c;
+}
+
 .ms-btn-container{
     text-align: center;
 }
@@ -137,6 +143,10 @@ header a{
 
 .link-container{
     font-weight: 500;
+}
+
+.link-container li a:hover{
+    color: rgb(204, 204, 204);
 }
 
 /*MAIN*/
@@ -312,6 +322,12 @@ form.contact textarea{
     border-radius: 0px;
 }
 
+form.contact input:focus,
+form.contact textarea:focus{
+    box-shadow: none;
+    border-color: black;
+}
+
 form.contact input::placeholder,
 form.contact textarea::placeholder{
     color: black;
@@ -378,6 +394,7 @@ ul.social li a{
     border-radius: 50%;
     font-size: 20px;
     line-height: 50px;
+    overflow: hidden;
 }
 
 .info-container,
