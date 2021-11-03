@@ -2,7 +2,7 @@
 header{
     display: flex;
     align-items: center;
-    height: 80px;
+    padding: 20px 0;
     background-color: #2c3e50;
     color: white;
 }
@@ -36,29 +36,31 @@ section{
 }
 
 /*Button*/
-.btn{
-    display: inline-block;
-    text-align: center;
-}
-
-.btn-medium{
-    padding: 5px 10px;
-}
-
-.btn-white{
-    color: white;
-    border: 1px solid white;
-}
-
-.btn-cyan{
+.ms-btn-cyan{
     color: white;
     background-color: #1abc9c;
     border: 1px solid #1abc9c;
 }
 
-.btn-container{
-    width: 100%;
+.ms-btn-container{
     text-align: center;
+}
+
+/* Icon */
+.star-icon{
+    font-size: 30px;
+}
+
+/*Section*/
+.section-title .star-icon::before,
+.section-title .star-icon::after{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    margin: 10px 10px;
+    background-color: black;
+    border-radius: 5px;
 }
 
 /*HEADER*/
@@ -112,6 +114,17 @@ header a{
     font-size: 40px;
 }
 
+.jumbo-text-container .star-icon::before,
+.jumbo-text-container .star-icon::after{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    margin: 10px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
 .jumbo-text-container span{
     margin: 10px 0;
 }
@@ -120,29 +133,59 @@ header a{
     font-size: 20px;
 }
 
-/* Section 1 */
+/* Section 1 - Portfolio */
 .card{
     margin: 15px 0;
     border-radius: 10px;
     overflow: hidden;
 }
 
-/* Section 2 */
+/* Section 2 - About */
 .about{
     background-color: #1abc9c;
     color: white;
+}
+
+.about .section-title .star-icon::before,
+.about .section-title .star-icon::after{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    margin: 10px 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .about-text{
     margin: 10px 0;
 }
 
-.about .btn{
-    margin-top: 20px;
+.about a.btn .download-icon{
+    margin-right: 5px;
+    padding-bottom: 5px;
 }
 
-/* Section 3 */
-.input-ex{
+/* Section 3 - Form */
+form.contact input,
+form.contact textarea{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0px;
+}
+
+form.contact input::placeholder,
+form.contact textarea::placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+/*ESEMPIO DI IERI*/
+/* .input-ex{
     padding-bottom: 20px;
     margin-bottom: 10px;
     border-bottom: 1px solid black;
@@ -150,7 +193,7 @@ header a{
 
 .input-ex.input-text{
     padding-bottom: 80px;
-}
+} */
 
 /*FOOTER*/
 footer ul.social{
@@ -161,7 +204,7 @@ footer ul.social{
 
 ul.social li{
     display: inline-block;
-    margin: 0 5px;
+    margin: 5px;
 }
 
 ul.social li a{
@@ -176,16 +219,14 @@ ul.social li a{
     line-height: 50px;
 }
 
-.info-container{
+.info-container,
+.social-container,
+.aboutfree-container{
     margin: 20px 0;
 }
 
-.social-container{
-    margin: 20px 0;
-}
-
-.about-container{
-    margin: 20px 0;
+.aboutfree-container p{
+    padding: 0 30px;
 }
 
 /* Copyright */

@@ -24,14 +24,14 @@
                 <div class="row align-items-center">
 
                     <!-- Logo column -->
-                    <div class="col-6">
+                    <div class="col-10 col-md-6">
                         <div class="logo-container">
                             <span class="logo">START BOOTSTRAP</span>
                         </div>
                     </div>
 
                     <!-- Menu column -->
-                    <div class="col-6">
+                    <div class="col-2 col-md-6">
 
                         <div class="menu-container">
                             <!-- Burger-menu-container -->
@@ -70,9 +70,13 @@
 
             <!-- Jumbo Text -->
             <div class="jumbo-text-container">
+                
+                <!-- Title -->
                 <h1>START BOOTSTRAP</h1>
-                <span>stellina</span>
-                <p>LOREM-LOREM-LOREM</p>
+                <div class="star-icon"><i class="fas fa-star"></i></div>
+
+                <!-- Subtitle -->
+                <span>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span>
             </div>
         </div>
 
@@ -83,7 +87,7 @@
                 <!-- Section title -->
                 <div class="section-title">
                     <h2>PORTFOLIO</h2>
-                    <span>stellina</span>
+                    <div class="star-icon"><i class="fas fa-star"></i></div>
                 </div>
 
                 <!-- Card container -->
@@ -150,7 +154,7 @@
                     <!-- Section title -->
                     <div class="section-title">
                         <h2>ABOUT</h2>
-                        <span>stellina</span>
+                        <div class="star-icon"><i class="fas fa-star"></i></div>
                     </div>
 
                     <!-- About text -->
@@ -173,8 +177,8 @@
                     </div>
 
                     <!-- Btn -->
-                    <div class="btn-container">
-                        <a class="btn btn-medium btn-white" href="#"><span class="download-icon"><i class="fas fa-download"></i></span>Download</a>
+                    <div class="ms-btn-container">
+                        <a class="btn btn-lg btn-outline-light" href="#"><span class="download-icon"><i class="fas fa-download"></i></span>Download</a>
                     </div>
 
                 </div>
@@ -183,7 +187,7 @@
         </section>
 
         <!-- Section 3 - Form -->
-        <section class="form">
+        <section>
 
             <div class="wrapper">
                 <div class="container-fluid">
@@ -191,38 +195,32 @@
                     <!-- Section title -->
                     <div class="section-title">
                         <h2>CONTACT ME</h2>
-                        <span>stellina</span>
+                        <div class="star-icon"><i class="fas fa-star"></i></div>
                     </div>
 
                     <!-- Input container -->
-                    <div class="input-container">
-
+                    <form class="contact">
                         <!-- Input name -->
-                        <div class="input-ex input-name">
-                            name
-                        </div>
+                        <label for="name" class="form-label sr-only">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
 
-                        <!-- Input name -->
-                        <div class="input-ex input-mail">
-                            email address
-                        </div>
+                        <!-- Input mail -->
+                        <label for="email" class="form-label sr-only">Email Address</label>
+                        <input type="text" class="form-control" id="email" placeholder="Email Address">
 
-                        <!-- Input name -->
-                        <div class="input-ex input-number">
-                            phone number
-                        </div>
+                        <!-- Input number -->
+                        <label for="phone-number" class="form-label sr-only">Phone Number</label>
+                        <input type="text" class="form-control" id="naphone-numberme" placeholder="Phone Number">
 
-                        <!-- Input name -->
-                        <div class="input-ex input-text">
-                            message
-                        </div>
+                        <!-- Input textarea -->
+                        <label for="message" class="form-label sr-only">Message - Text Area</label>
+                        <textarea id="message" class="form-control" placeholder="Message" cols="30" rows="10"></textarea>
 
                         <!-- Btn -->
                         <div>
-                            <a class="btn btn-medium btn-cyan" href="#">Send</a>
+                            <button class="btn btn-lg ms-btn-cyan" type="submit">Send</button>
                         </div>
-
-                    </div>
+                    </form>
                 </div>
             </div>
 
@@ -233,7 +231,9 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="row flex-column flex-md-row">
+
+            <!-- Footer Top -->
+            <div class="row row-cols-1 row-cols-md-3">
                 
                 <!-- Info -->
                 <div class="col">
@@ -256,9 +256,9 @@
                     </div>
                 </div>
 
-                <!-- About -->
+                <!-- About Freelancer -->
                 <div class="col">
-                    <div class="about-container">
+                    <div class="aboutfree-container">
                         <span>ABOUT FREELANCER</span>
                         <p>Freelance is a free to use, open source Bootstrap theme created by <span class="color-cyan">Start Boolstrap</span>.</p>
                     </div>
@@ -267,7 +267,7 @@
             </div>
         </div>
 
-        <!-- Copyright -->
+        <!-- Footer Bottom - Copyright -->
         <div class="copyright">
             <span>Copyright <span class="copyright-icon"><i class="far fa-copyright"></i></span> You Website 2019</span>
         </div>
