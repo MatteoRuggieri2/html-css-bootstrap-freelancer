@@ -90,8 +90,22 @@ header a{
     text-align: right;
 }
 
-.burger-menu-icon{
+.burger-menu-container{
+    text-align: center;
+}
+
+.burger-menu-container .burger-menu-icon{
+    display: inline-block;
     vertical-align: middle;
+    padding: 0 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #888888;
+    font-size: 25px;
+}
+
+.link-container{
+    font-weight: 500;
 }
 
 /*MAIN*/
@@ -126,11 +140,22 @@ header a{
 }
 
 .jumbo-text-container span{
+    display: inline-block;
     margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .jumbo-text-container p{
     font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    
+    .jumbo-text-container h1{
+        font-size: 50px;
+    }
+
 }
 
 /* Section 1 - Portfolio */
