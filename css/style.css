@@ -394,7 +394,26 @@ ul.social li a{
     border-radius: 50%;
     font-size: 20px;
     line-height: 50px;
-    overflow: hidden;
+}
+
+a#facebook:hover{
+    background-color: #4867aa;
+    border-color: #4867aa;
+}
+
+a#google-plus:hover{
+    background-color: #d54836;
+    border-color: #d54836;
+}
+
+a#twitter:hover{
+    background-color: #1d9bf0;
+    border-color: #1d9bf0;
+}
+
+a#linkedin:hover{
+    background-color: #0a63bc;
+    border-color: #0a63bc;
 }
 
 .info-container,
